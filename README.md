@@ -60,8 +60,6 @@ Use the following test card to make failed test payment:
   * Загрузите модуль _begateway.zip_
   * Найдите модуль _BeGateway_ в списке модулей и установите его
 
-![Установить модуль](https://github.com/begateway/prestashop-payment-module/raw/master/doc/add-module-install.png)
-
 ## Настройка модуля
 
   * Выберите закладку _Установленные модули_
