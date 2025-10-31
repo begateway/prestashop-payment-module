@@ -1,0 +1,39 @@
+{
+  "type": "prestashop-begateway-module",
+  "name": "prestashop/begateway",
+  "description": "PrestaShop beGateway module",
+  "homepage": "https://github.com/begateway/prestashop-payment-module",
+  "license": "AFL-3.0",
+  "authors": [
+    {
+      "name": "eComCharge",
+      "email": "support@begateway.com"
+    }
+  ],
+  "config": {
+    "platform": {
+      "php": "5.6.0"
+    },
+    "preferred-install": "dist",
+    "classmap-authoritative": true,
+    "optimize-autoloader": true,
+    "sort-packages": true,
+    "prepend-autoloader": false
+  },
+  "autoload": {
+    "classmap": [
+      "controllers",
+      "begateway.php"
+    ]
+  },
+  "scripts": {
+    "set-license-header": [
+      "@php ./vendor/bin/header-stamp --license=\"assets/afl.txt\" --exclude=\".github,vendor\""
+    ]
+  },
+  "require": {
+    "ext-curl": "*",
+    "begateway/begateway-api-php": "^5.0.0"
+  },
+  "author": "eComCharge"
+}
